@@ -1,0 +1,43 @@
+@import "./styles/reset.css";
+
+html {
+  --color-black: rgb(18, 18, 18);
+  --color-grey: rgb(117, 117, 117);
+  --color-white: rgb(255, 255, 255);
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-128: 128px;
+  
+  --scrollbar-width: 12px;
+
+  --content-padding: 0 var(--space-48);
+}
+
+body::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  background-color: var(--color-white);
+  outline: 1px solid black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-black);
+}
+
+@font-face {
+  font-family: "ALK";
+  src: url("./fonts/alk.ttf");
+}
+
+@font-face {
+  font-family: "ALKBold";
+  src: url("./fonts/alk-mtav-bold.ttf");
+}
